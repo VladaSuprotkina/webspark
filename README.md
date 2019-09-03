@@ -1,1 +1,1 @@
-# webspark
+# Vlada Suprotkina assignment for WebSpark
