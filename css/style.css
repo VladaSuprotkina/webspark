@@ -1,0 +1,492 @@
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Regular';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: url("../fonts/HelveticaNeue-Bold.eot");
+  src: url("../fonts/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/HelveticaNeue-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/HelveticaNeue.eot");
+  src: url("../fonts/HelveticaNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeue.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Myriad Pro Regular', sans-serif;
+  overflow-x: hidden;
+}
+
+body a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+body ul,
+body li {
+  list-style: none;
+}
+
+body a:hover {
+  text-decoration: none;
+  -webkit-transition: color .3s ease, background-color .3s ease;
+  transition: color .3s ease, background-color .3s ease;
+}
+
+body article, body aside, body figcaption, body figure, body footer, body header, body hgroup, body main, body nav, body section {
+  display: block;
+}
+
+body address {
+  font-style: normal;
+}
+
+body img {
+  position: relative;
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+}
+
+body button:focus,
+body a:focus,
+body input:focus {
+  outline: 0;
+}
+
+body svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+body button {
+  border-radius: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+body .btn {
+  color: #000;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 12px;
+  padding: 12px 30px;
+  border: 1px solid #000;
+  background-color: transparent;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body .btn:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: transparent;
+}
+
+body .container {
+  max-width: 966px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+body .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-section {
+  min-height: 198px;
+  padding: 20px 0;
+  width: 100vw;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 73px;
+}
+
+.header-section .header-section__row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 198px;
+}
+
+.header-section .header-section__row .header-section__logo {
+  padding: 0 75px 0 55px;
+  margin-bottom: 20px;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_title h1 {
+  font-family: 'Myriad Pro Regular', sans-serif;
+  font-size: 35px;
+  color: #000;
+  margin-right: 20px;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_title span {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 15px;
+  color: #4090db;
+  border: 1px solid #4090db;
+  border-radius: 3px;
+  min-height: 29px;
+  padding: 5px 12px;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_counter {
+  margin-bottom: 21px;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_counter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_counter ul li {
+  margin-right: 25px;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_counter ul li:last-of-type {
+  margin-right: 0;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_counter ul li a {
+  text-decoration: none;
+  color: #3d4044;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 17px;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_counter ul li a span {
+  font-family: "Proxima Nova Bold", sans-serif;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_date {
+  font-family: 'HelveticaNeue', sans-serif;
+  font-size: 17px;
+  color: #262626;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_date h2 {
+  margin-right: 15px;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 690px) {
+  .header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 690px) {
+  .header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field:last-of-type {
+    margin-left: 52px;
+  }
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field input {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(1, 1, 1, 0.15);
+          box-shadow: inset 0px 1px 1px 0px rgba(1, 1, 1, 0.15);
+  border-radius: 3px;
+  padding: 6px 12px;
+  max-width: 180px;
+  min-height: 30px .header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field input;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field input ::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field input :-ms-input-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field input ::-ms-input-placeholder {
+  font-size: 14px;
+  color: #333;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field input ::placeholder {
+  font-size: 14px;
+  color: #333;
+}
+
+.header-section .header-section__row .header-section__page-description .header-section__page-description_date .input-field .input-field-btn {
+  border: 1px solid #ccc;
+  border-left: 0;
+  background-color: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1;
+}
+
+.main {
+  background-color: #fafafa;
+  width: 100vw;
+  height: 100%;
+}
+
+.main .profile-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .profile-section__container article {
+  margin-right: -30px;
+  margin-bottom: 45px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main .profile-section__container article {
+    margin-right: 0;
+  }
+}
+
+.main .profile-section__container article .profile-section__row .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main .profile-section__container article .profile-section__row .row {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .main .profile-section__container article .profile-section__row .row {
+    display: block;
+  }
+}
+
+.main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper {
+  background-color: #00ff87;
+  display: block;
+  max-height: 292px;
+  max-width: 292px;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper .profile-section__item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper .profile-section__item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper .profile-section__item .profile-section__item-description {
+  background-color: rgba(0, 0, 0, 0.502);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  color: #fff;
+  font-family: "Proxima Nova Regular", sans-serif;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 724px) {
+  .main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper .profile-section__item .profile-section__item-description {
+    font-size: 14px;
+  }
+}
+
+.main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper .profile-section__item .profile-section__item-description .profile-section__item-description-info {
+  width: 70%;
+}
+
+.main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper .profile-section__item .profile-section__item-description .profile-section__item-description-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper .profile-section__item .profile-section__item-description .profile-section__item-description-info ul:last-of-type {
+  margin-bottom: 0;
+}
+
+.main .profile-section__container article .profile-section__row .row .profile-section__item-wrapper .profile-section__item .profile-section__item-description strong {
+  position: absolute;
+  bottom: 15px;
+}
+
+.main .profile-section__container article .profile-section__row .row:last-of-type {
+  margin-bottom: 0;
+}
+
+.main .profile-section__container .btn {
+  margin-bottom: 75px;
+}
+/*# sourceMappingURL=style.css.map */
